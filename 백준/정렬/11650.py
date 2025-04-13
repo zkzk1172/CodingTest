@@ -12,3 +12,13 @@ ls = sorted(ls, key = lambda x : (x[0], x[1]))
 
 for x in ls:
   print(' '.join(map(str,x)))
+
+# 강사 풀이
+
+N = int(input())
+
+dots=[tuple(map(int,input().split())) for _ in range(N)]
+dots = sorted(dots)
+
+for x,y in dots:
+  print(x,y,sep=' ')
